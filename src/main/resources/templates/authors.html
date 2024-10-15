@@ -10,6 +10,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+
     <!-- Custom CSS for button colors and theme toggler -->
     <style>
         /* Theme for buttons */
@@ -112,7 +113,7 @@
         <div class="card-body">
             <div th:switch="${authors}" class="container my-5">
                 <p class="my-5">
-                    <a href="/add-author" class="btn btn-grey"> <!-- Custom class for grey -->
+                    <a href="/add-author" class="text-dark"> <!-- Custom class for grey -->
                         <i class="fas fa-user-plus ml-2"> Add Author </i>
                     </a>
                 </p>
@@ -133,11 +134,11 @@
                                 <td th:text="${author.id}"></td>
                                 <td th:text="${author.name}"></td>
                                 <td><a th:href="@{/update-author/{id}(id=${author.id})}"
-                                       class="btn btn-edit"><i
+                                       class="btn btn-primary"><i
                                         class="fas fa-user-edit ml-2"></i></a></td> <!-- Change class to btn-edit -->
                                 <td><a th:href="@{/remove-author/{id}(id=${author.id})}"
                                        class="btn btn-delete"><i
-                                        class="fas fa-user-times ml-2"></i></a></td> <!-- Change class to btn-delete -->
+                                        class="fa-solid fa-user-minus"></i></a></td> <!-- Change class to btn-delete -->
                             </tr>
                             </tbody>
                         </table>
