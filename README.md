@@ -55,7 +55,7 @@ BookVault/
 ├── src/
 │   └── main/
 │       ├── java/
-│       │   └── com/gulshan/bookvault/
+│       │   └── com/application/bookvault/
 │       │       ├── controllers/        # Houses the Spring MVC controllers
 │       │       ├── models/             # Defines the data models (entities)
 │       │       ├── repositories/       # Contains Spring Data JPA repositories
