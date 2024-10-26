@@ -86,7 +86,7 @@ public class BookController {
 
     @PostMapping("/save-book")
     //bindingResult is used to check for any validation error in UI(perticularly in forms)
-    public String savebook(Book book, BindingResult result, Model model){
+    public String savebook(Book book, BindingResult result, Model model){               // @ModelAttribute("book") Book book   can also be used
 
         if(result.hasErrors()){
             return "add-book";
